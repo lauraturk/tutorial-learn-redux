@@ -1,13 +1,13 @@
-//increment
-export function increment(index){
+// increment
+export function increment(index) {
   return {
     type: 'INCREMENT_LIKES',
     index
   }
 }
 
-//add comments
-export function addComment(postId, author, comment){
+// add comment
+export function addComment(postId, author, comment) {
   return {
     type: 'ADD_COMMENT',
     postId,
@@ -15,11 +15,13 @@ export function addComment(postId, author, comment){
     comment
   }
 }
-//remove comments
-export function removeComment(postId, i){
+
+// remove comment
+
+export function removeComment(postId, i) {
   return {
     type: 'REMOVE_COMMENT',
     i,
-    postId,
+    postId
   }
 }
